@@ -58,6 +58,21 @@ body {
   background-color: var(--bg-main);
 
   color: var(--text);
+  position: relative;
+}
+
+h1 {
+  cursor: default;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* Optional styling */
+  color: #868686;
+  font-size: 3rem;
+  text-align: center;
 }
 
 #player {
