@@ -1,7 +1,7 @@
 const player = document.querySelector("#player");
 
-let xPos = 500;
-let yPos = 40;
+let xPos = window.innerWidth / 2;
+let yPos = window.innerHeight / 2 + 100;
 
 let moveUp = false;
 let moveDown = false;
@@ -9,6 +9,8 @@ let moveRight = false;
 let moveLeft = false;
 
 const speed = 10;
+
+console.log(window.innerWidth);
 
 // Initialize player position
 window.addEventListener("DOMContentLoaded", () => {
@@ -44,7 +46,6 @@ function move() {
   player.style.transform = `translate(${xPos}px, ${yPos}px)`;
   requestAnimationFrame(move);
 }
-
 move();
 
 // Teleport to mouse click
