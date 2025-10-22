@@ -1,0 +1,72 @@
+/* 
+Colors: 
+
+Monochrome:
+  --text: #f1eae7;
+  --bg-main: #151517;
+  --bg-alt: #3f3f43;
+  --accent: #b0b1bc;
+  --accent-alt: #6b6b6f;
+
+Deep-sea:
+  --text: #e0e1dd;
+  --bg-main: #09131d;
+  --bg-alt: #151d2d;
+  --accent: #415a77;
+  --accent-alt: #5d7493;
+
+
+Benjamin Moore:
+    --text: #364042;
+    --bg-alt: #F0E2D2;
+    --bg-main: #EFEEE5;
+    --accent: #D18266;
+    --bg-foot: #5B6D92;
+    --accent-alt: #D5E3E6;
+
+*/
+
+:root {
+  --text: #ded7ca;
+  --bg-main: #111b25;
+  --bg-alt: #1b2435;
+  --accent: #607ea9;
+  --accent-alt: #415770;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  background-color: var(--bg-main);
+
+  font-size: 16px; /* 1rem = 16px */
+}
+
+* {
+  box-sizing: border-box;
+
+  padding: 0;
+  margin: 0;
+
+  line-height: 1.5;
+}
+
+body {
+  width: 100svw;
+  height: 100svh;
+
+  background-color: var(--bg-main);
+
+  color: var(--text);
+}
+
+#player {
+  width: 50px;
+  height: 50px;
+
+  background-color: var(--accent-alt);
+  border: 5px solid var(--accent);
+  border-radius: 100%;
+
+  position: absolute;
+}
